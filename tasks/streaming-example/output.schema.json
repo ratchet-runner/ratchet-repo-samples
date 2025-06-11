@@ -1,0 +1,86 @@
+{
+  "type": "object",
+  "properties": {
+    "success": {
+      "type": "boolean",
+      "description": "Whether the task completed successfully"
+    },
+    "steps_completed": {
+      "type": "integer",
+      "description": "Number of steps that were completed"
+    },
+    "total_processing_time": {
+      "type": "integer",
+      "description": "Total time spent processing in milliseconds"
+    },
+    "results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "step": {
+            "type": "integer",
+            "description": "Step number"
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time",
+            "description": "When this step was completed"
+          },
+          "data": {
+            "type": "string",
+            "description": "Result data from this step"
+          },
+          "value": {
+            "type": "number",
+            "description": "Numeric value generated for this step"
+          }
+        },
+        "required": ["step", "timestamp", "data", "value"]
+      },
+      "description": "Results from each processing step"
+    },
+    "summary": {
+      "type": "object",
+      "properties": {
+        "total_steps": {
+          "type": "integer",
+          "description": "Total number of steps configured"
+        },
+        "successful_steps": {
+          "type": "integer",
+          "description": "Number of steps completed successfully"
+        },
+        "average_value": {
+          "type": "number",
+          "description": "Average value across all steps"
+        },
+        "first_result": {
+          "type": "object",
+          "description": "Result from the first step"
+        },
+        "last_result": {
+          "type": "object",
+          "description": "Result from the last step"
+        }
+      },
+      "required": ["total_steps", "successful_steps", "average_value"]
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "task_completed_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "When the task was completed"
+        },
+        "execution_context": {
+          "type": "object",
+          "description": "Execution context provided to the task"
+        }
+      }
+    }
+  },
+  "required": ["success", "steps_completed", "total_processing_time", "results", "summary", "metadata"],
+  "additionalProperties": false
+}

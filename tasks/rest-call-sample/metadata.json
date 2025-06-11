@@ -1,0 +1,14 @@
+{
+  "name": "rest-call-sample",
+  "uuid": "146e34a7-d2ed-4aaa-b135-93695b78b326",
+  "version": "1.0.0",
+  "label": "REST API Call Sample",
+  "description": "Demonstrates making HTTP REST API calls to external services. Shows proper error handling, response parsing, and HTTP status code management.",
+  "tags": ["rest", "api", "http", "sample"],
+  "category": "api-integration",
+  "author": "Ratchet Contributors",
+  "license": "MIT",
+  "ratchet_version": ">=0.6.0",
+  "created_at": "2024-01-30T13:20:00Z",
+  "updated_at": "2024-03-01T14:20:00Z"
+}

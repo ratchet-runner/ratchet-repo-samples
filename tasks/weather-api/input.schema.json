@@ -1,0 +1,16 @@
+{
+    "type": "object",
+    "properties": {
+        "city": {
+            "type": "string",
+            "description": "The city name to get weather for"
+        },
+        "units": {
+            "type": "string",
+            "enum": ["metric", "imperial"],
+            "description": "Temperature units (metric = Celsius, imperial = Fahrenheit)",
+            "default": "metric"
+        }
+    },
+    "required": ["city"]
+}

@@ -1,0 +1,39 @@
+{
+  "input": {
+    "city": "Berlin",
+    "units": "metric"
+  },
+  "expected_output": {
+    "location": "Berlin, DE",
+    "temperature": 22.5,
+    "units": "C",
+    "description": "clear sky",
+    "humidity": 48
+  },
+  "mock": {
+    "http": {
+      "url": "api.openweathermap.org/data/2.5/weather",
+      "method": "GET",
+      "response": {
+        "ok": true,
+        "status": 200,
+        "statusText": "OK",
+        "body": {
+          "name": "Berlin",
+          "sys": {
+            "country": "DE"
+          },
+          "main": {
+            "temp": 22.5,
+            "humidity": 48
+          },
+          "weather": [
+            {
+              "description": "clear sky"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

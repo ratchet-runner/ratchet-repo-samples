@@ -1,0 +1,42 @@
+{
+  "type": "object",
+  "properties": {
+    "steps": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 20,
+      "default": 5,
+      "description": "Number of processing steps to execute"
+    },
+    "delay": {
+      "type": "integer",
+      "minimum": 100,
+      "maximum": 10000,
+      "default": 1000,
+      "description": "Delay between steps in milliseconds"
+    },
+    "simulate_error": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether to simulate an error halfway through execution"
+    }
+  },
+  "required": [],
+  "additionalProperties": false,
+  "examples": [
+    {
+      "steps": 3,
+      "delay": 500
+    },
+    {
+      "steps": 10,
+      "delay": 2000,
+      "simulate_error": false
+    },
+    {
+      "steps": 5,
+      "delay": 1000,
+      "simulate_error": true
+    }
+  ]
+}

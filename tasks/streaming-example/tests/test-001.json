@@ -1,0 +1,24 @@
+{
+  "name": "Basic streaming test",
+  "description": "Test basic streaming functionality with 3 steps",
+  "input": {
+    "steps": 3,
+    "delay": 100
+  },
+  "expected_output": {
+    "success": true,
+    "steps_completed": 3,
+    "results": "array_length:3",
+    "summary": {
+      "total_steps": 3,
+      "successful_steps": 3
+    }
+  },
+  "assertions": [
+    {"path": "success", "operator": "equals", "expected": true},
+    {"path": "steps_completed", "operator": "equals", "expected": 3},
+    {"path": "results.length", "operator": "equals", "expected": 3},
+    {"path": "summary.total_steps", "operator": "equals", "expected": 3},
+    {"path": "summary.successful_steps", "operator": "equals", "expected": 3}
+  ]
+}

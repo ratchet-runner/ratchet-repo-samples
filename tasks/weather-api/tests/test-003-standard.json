@@ -1,0 +1,39 @@
+{
+  "input": {
+    "city": "London",
+    "units": "imperial"
+  },
+  "expected_output": {
+    "location": "London, GB",
+    "temperature": 15.2,
+    "units": "F",
+    "description": "partly cloudy",
+    "humidity": 65
+  },
+  "mock": {
+    "http": {
+      "url": "api.openweathermap.org/data/2.5/weather",
+      "method": "GET",
+      "response": {
+        "ok": true,
+        "status": 200,
+        "statusText": "OK",
+        "body": {
+          "name": "London",
+          "sys": {
+            "country": "GB"
+          },
+          "main": {
+            "temp": 15.2,
+            "humidity": 65
+          },
+          "weather": [
+            {
+              "description": "partly cloudy"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

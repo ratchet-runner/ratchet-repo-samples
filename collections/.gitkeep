@@ -1,0 +1,5 @@
+# Collections Directory
+
+This directory is reserved for task collections - curated sets of related tasks that work together to accomplish complex workflows.
+
+Collections will be defined as YAML files that reference tasks and define execution order, dependencies, and shared configuration.

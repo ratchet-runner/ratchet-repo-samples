@@ -1,0 +1,39 @@
+name: "Ratchet Sample Task Repository"
+description: "Sample JavaScript tasks demonstrating Ratchet capabilities including API integration, data processing, and streaming operations"
+version: "1.0.0"
+maintainers:
+  - name: "Ratchet Contributors"
+    email: "contributors@ratchet.io"
+categories:
+  - "examples"
+  - "api-integration"
+  - "data-processing"
+  - "streaming"
+  - "authentication"
+tags:
+  - "sample"
+  - "javascript"
+  - "tutorial"
+  - "demonstration"
+ratchet_version: ">=0.6.0"
+discovery:
+  auto_index: true
+  include_patterns:
+    - "tasks/**"
+    - "collections/**"
+    - "templates/**"
+  exclude_patterns:
+    - "**/.git/**"
+    - "**/node_modules/**"
+    - "**/*.zip"
+    - "**/tmp/**"
+repository:
+  type: "git"
+  url: "https://github.com/michiel/ratchet.git"
+  directory: "sample/js-tasks"
+  branch: "main"
+license: "MIT"
+documentation:
+  readme: "README.md"
+  examples: "tasks/"
+  api_docs: "https://docs.ratchet.io"

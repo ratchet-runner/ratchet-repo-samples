@@ -1,0 +1,129 @@
+{
+  "version": "1.0",
+  "repository": {
+    "name": "Ratchet Sample Task Repository",
+    "description": "Sample JavaScript tasks demonstrating Ratchet capabilities",
+    "version": "1.0.0"
+  },
+  "tasks": [
+    {
+      "name": "addition",
+      "uuid": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+      "version": "1.0.0",
+      "label": "Addition Calculator",
+      "description": "A simple calculator that adds two numbers together. Demonstrates basic task structure, input validation, and output formatting.",
+      "category": "examples",
+      "tags": ["math", "calculator", "demo", "beginner"],
+      "path": "tasks/addition",
+      "complexity": "beginner",
+      "supports_streaming": false,
+      "author": "Ratchet Contributors",
+      "license": "MIT",
+      "ratchet_version": ">=0.6.0",
+      "created_at": "2024-02-10T10:00:00Z",
+      "updated_at": "2024-03-01T14:20:00Z"
+    },
+    {
+      "name": "dummy-task",
+      "uuid": "12345678-1234-1234-1234-123456789012",
+      "version": "1.0.0",
+      "label": "Dummy Task",
+      "description": "A minimal test task that simply echoes the input. Useful for testing task execution pipelines, validation workflows, and integration testing.",
+      "category": "examples",
+      "tags": ["test", "dummy", "echo", "validation"],
+      "path": "tasks/dummy-task",
+      "complexity": "beginner",
+      "supports_streaming": false,
+      "author": "Ratchet Contributors",
+      "license": "MIT",
+      "ratchet_version": ">=0.6.0",
+      "created_at": "2024-02-05T08:30:00Z",
+      "updated_at": "2024-03-01T14:20:00Z"
+    },
+    {
+      "name": "ms-oauth-token",
+      "uuid": "be6c7f98-4896-44cc-8c82-30328c3aefda",
+      "version": "1.0.0",
+      "label": "Microsoft OAuth Token Retrieval",
+      "description": "Retrieves OAuth access tokens from Microsoft Azure AD using client credentials flow. Demonstrates secure authentication patterns and token management for Microsoft services integration.",
+      "category": "authentication",
+      "tags": ["oauth", "microsoft", "authentication", "azure", "security"],
+      "path": "tasks/ms-oauth-token",
+      "complexity": "intermediate",
+      "supports_streaming": false,
+      "author": "Ratchet Contributors",
+      "license": "MIT",
+      "ratchet_version": ">=0.6.0",
+      "security_considerations": ["Store credentials securely", "Handle token expiration"],
+      "created_at": "2024-02-01T16:10:00Z",
+      "updated_at": "2024-03-01T14:20:00Z"
+    },
+    {
+      "name": "rest-call-sample",
+      "uuid": "146e34a7-d2ed-4aaa-b135-93695b78b326",
+      "version": "1.0.0",
+      "label": "REST API Call Sample",
+      "description": "Demonstrates making HTTP REST API calls to external services. Shows proper error handling, response parsing, and HTTP status code management.",
+      "category": "api-integration",
+      "tags": ["rest", "api", "http", "sample"],
+      "path": "tasks/rest-call-sample",
+      "complexity": "intermediate",
+      "supports_streaming": false,
+      "author": "Ratchet Contributors",
+      "license": "MIT",
+      "ratchet_version": ">=0.6.0",
+      "created_at": "2024-01-30T13:20:00Z",
+      "updated_at": "2024-03-01T14:20:00Z"
+    },
+    {
+      "name": "streaming-example",
+      "uuid": "a7b8c9d0-e1f2-3456-7890-abcdef123456",
+      "version": "1.0.0",
+      "label": "Streaming Progress Example",
+      "description": "Demonstrates real-time progress reporting during task execution with streaming updates. Shows how to implement long-running operations with user feedback.",
+      "category": "examples",
+      "tags": ["streaming", "progress", "demo", "long-running"],
+      "path": "tasks/streaming-example",
+      "complexity": "intermediate",
+      "supports_streaming": true,
+      "estimated_duration": "variable",
+      "author": "Ratchet Contributors",
+      "license": "MIT",
+      "ratchet_version": ">=0.6.0",
+      "created_at": "2024-01-25T11:45:00Z",
+      "updated_at": "2024-03-01T14:20:00Z"
+    },
+    {
+      "name": "weather-api",
+      "uuid": "c1f8c4a5-d17c-4ab8-b7e0-9527d7a11030",
+      "version": "1.0.0",
+      "label": "Weather API Task",
+      "description": "Fetches current weather data from external APIs with support for multiple cities. Demonstrates HTTP integration, error handling, and flexible response formatting.",
+      "category": "api-integration",
+      "tags": ["api", "weather", "http", "integration"],
+      "path": "tasks/weather-api",
+      "complexity": "intermediate",
+      "supports_streaming": false,
+      "author": "Ratchet Contributors",
+      "license": "MIT",
+      "ratchet_version": ">=0.6.0",
+      "created_at": "2024-01-20T09:15:00Z",
+      "updated_at": "2024-03-01T14:20:00Z"
+    }
+  ],
+  "collections": {},
+  "templates": {},
+  "statistics": {
+    "total_tasks": 6,
+    "categories": {
+      "examples": 3,
+      "authentication": 1,
+      "api-integration": 2
+    },
+    "complexity_distribution": {
+      "beginner": 2,
+      "intermediate": 4
+    }
+  },
+  "generated_at": "2024-03-01T14:20:00Z"
+}

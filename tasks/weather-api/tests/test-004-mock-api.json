@@ -1,0 +1,39 @@
+{
+  "input": {
+    "city": "Paris",
+    "units": "metric"
+  },
+  "expected_output": {
+    "location": "Paris, FR",
+    "temperature": 20,
+    "units": "C",
+    "description": "sunny",
+    "humidity": 50
+  },
+  "mock": {
+    "http": {
+      "url": "api.openweathermap.org/data/2.5/weather",
+      "method": "GET",
+      "response": {
+        "ok": true,
+        "status": 200,
+        "statusText": "OK",
+        "body": {
+          "name": "Paris",
+          "sys": {
+            "country": "FR"
+          },
+          "main": {
+            "temp": 20,
+            "humidity": 50
+          },
+          "weather": [
+            {
+              "description": "sunny"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "TENANT_ID": {
+      "type": "string"
+    },
+    "CLIENT_ID": {
+      "type": "string"
+    },
+    "CLIENT_SECRET": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "TENANT_ID",
+    "CLIENT_ID",
+    "CLIENT_SECRET"
+  ]
+}

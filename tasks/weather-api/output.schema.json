@@ -1,0 +1,26 @@
+{
+    "type": "object",
+    "properties": {
+        "location": {
+            "type": "string",
+            "description": "The location name returned by the API"
+        },
+        "temperature": {
+            "type": "number",
+            "description": "Current temperature"
+        },
+        "units": {
+            "type": "string",
+            "description": "Temperature units (C or F)"
+        },
+        "description": {
+            "type": "string",
+            "description": "Weather description"
+        },
+        "humidity": {
+            "type": "number",
+            "description": "Humidity percentage"
+        }
+    },
+    "required": ["location", "temperature", "units", "description", "humidity"]
+}

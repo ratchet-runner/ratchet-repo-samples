@@ -1,0 +1,15 @@
+{
+  "name": "dummy-task",
+  "uuid": "12345678-1234-1234-1234-123456789012",
+  "version": "1.0.0",
+  "label": "Dummy Task",
+  "description": "A minimal test task that simply echoes the input. Useful for testing task execution pipelines, validation workflows, and integration testing.",
+  "tags": ["test", "dummy", "echo", "validation"],
+  "category": "examples",
+  "author": "Ratchet Contributors",
+  "license": "MIT",
+  "ratchet_version": ">=0.6.0",
+  "complexity": "beginner",
+  "created_at": "2024-02-05T08:30:00Z",
+  "updated_at": "2024-03-01T14:20:00Z"
+}

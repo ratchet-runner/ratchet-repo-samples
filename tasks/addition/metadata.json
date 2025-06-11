@@ -1,0 +1,14 @@
+{
+  "name": "addition",
+  "uuid": "bd6c6f98-4896-44cc-8c82-30328c3aefda",
+  "version": "1.0.0",
+  "label": "Addition Task", 
+  "description": "A simple mathematical task that adds two numbers together and returns both sum and product. Demonstrates basic input validation and arithmetic operations.",
+  "tags": ["math", "basic", "tutorial", "validation"],
+  "category": "examples",
+  "author": "Ratchet Contributors",
+  "license": "MIT",
+  "ratchet_version": ">=0.6.0",
+  "created_at": "2024-01-15T10:30:00Z",
+  "updated_at": "2024-03-01T14:20:00Z"
+}

@@ -1,0 +1,8 @@
+{
+  "input": {
+    "value": "World"
+  },
+  "expected_output": {
+    "result": "Hello, World"
+  }
+}

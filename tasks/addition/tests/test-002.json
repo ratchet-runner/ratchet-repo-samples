@@ -1,0 +1,9 @@
+{
+  "input" : {
+    "num1": 10,
+    "num2": 20
+  },
+  "expected_output" : {
+    "sum": 30
+  }
+}

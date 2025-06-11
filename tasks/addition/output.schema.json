@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "properties": {
+    "sum": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "sum"
+  ]
+}

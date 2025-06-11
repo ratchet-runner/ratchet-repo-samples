@@ -1,0 +1,39 @@
+{
+  "input": {
+    "city": "New York",
+    "units": "imperial"
+  },
+  "expected_output": {
+    "location": "New York, US",
+    "temperature": 72.5,
+    "units": "F",
+    "description": "partly cloudy",
+    "humidity": 65
+  },
+  "mock": {
+    "http": {
+      "url": "api.openweathermap.org/data/2.5/weather",
+      "method": "GET",
+      "response": {
+        "ok": true,
+        "status": 200,
+        "statusText": "OK",
+        "body": {
+          "name": "New York",
+          "sys": {
+            "country": "US"
+          },
+          "main": {
+            "temp": 72.5,
+            "humidity": 65
+          },
+          "weather": [
+            {
+              "description": "partly cloudy"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

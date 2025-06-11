@@ -1,0 +1,13 @@
+{
+  "name": "Error simulation test",
+  "description": "Test error handling during streaming execution",
+  "input": {
+    "steps": 4,
+    "delay": 50,
+    "simulate_error": true
+  },
+  "expected_error": "Simulated error at step 2",
+  "assertions": [
+    {"path": "error", "operator": "contains", "expected": "Simulated error"}
+  ]
+}
